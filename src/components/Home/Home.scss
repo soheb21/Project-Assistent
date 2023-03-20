@@ -1,0 +1,116 @@
+$homg_bg:linear-gradient(79deg, #7439db, #c66fbc 48%, #f7944d);
+$h2_clr: #7439db;;
+$btn_hover: #926cd5;;
+
+.home {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  .home_container {
+    background-color: $homg_bg;
+    padding: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0.9rem;
+    width: 100%;
+    height: 100vh;
+    .home_left {
+      display: flex;
+      flex-direction: column;
+      gap: 1.9rem;
+      h2 {
+        font-weight: bold;
+        color: $h2_clr;
+        font-size: 2.5rem;
+      }
+      p {
+        font-weight: 500;
+        font-size: 2rem;
+      }
+      button {
+        border: none;
+        outline: none;
+        padding: 0.8rem 1rem;
+        background-color: $h2_clr;
+        color: white;
+        border-radius: 0.4rem;
+        width: fit-content;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: 200ms;
+        display: flex;
+        gap: .3rem;
+        align-items: center;
+      }
+      button:hover {
+        background-color: $btn_hover;
+      }
+    }
+    .home_right {
+      max-width: 50%;
+
+      img {
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+  }
+  //Projects Section
+  .project_body{
+    border-top:1px solid #c66fbc;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: #e6e6e6;
+    h1{
+      color: #926cd5;
+    }
+    .home_projects{
+      width: 100%;
+      height: 100%;
+      display: grid;
+      padding: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      background-color: #f5f5f5;
+      
+      .home_p{
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+        box-shadow: 1px 1px 3px  rgba(0,0,0,0.2) ;
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: 400ms transform;
+        &:hover{
+          transform: scale(1.1);
+        }
+
+        .home_img{
+          width: 350px;
+          height: 160px;
+          width: auto;
+          img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+          }
+         
+        }
+        .home_title{
+          font-weight: bold;
+          font-size: 1rem;
+          padding: 1rem;
+          border-top: 1px solid gray;
+          color: #573395;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

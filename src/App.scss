@@ -1,0 +1,75 @@
+$bg_clr: linear-gradient(79deg, #7439db, #c66fbc 48%, #f7944d);
+$txt_clr: #7439db;
+@media (max-width: 769px) {
+  .home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .home_right {
+      img {
+        display: none;
+      }
+    }
+    .home_projects  {
+      display: flex !important; 
+      flex-direction: column !important;
+    }
+  }
+  .card_container {
+    display: flex;
+    flex-direction: column;
+    .card_right {
+      display: none !important;
+    }
+  }
+  .acc_info {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+        height: 100%;
+        width: auto;
+
+    .inner {
+      display: flex;
+      flex-direction: column;
+      width: max-content;
+      position: relative;
+
+     
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+       position: absolute;
+       top: 1rem;
+       left: 5rem;
+      }
+  }
+  .register{
+    overflow: hidden;
+    form{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        .bth{
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+  }
+  label{
+    text-align: center;
+  }
+}
+@media (max-width: 968px) {
+}

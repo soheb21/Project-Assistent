@@ -1,0 +1,38 @@
+.input_con {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  label {
+    font-weight: 500;
+    color: #252525;
+    font-size: 0.9rem;
+    margin-top: .3rem;
+  }
+  .inputContainer {
+    position: relative;
+
+    input {
+      border: 1px solid #ddd;
+      border-radius: 0.4rem;
+      padding: 0.7rem 0.9rem;
+      outline: none;
+      transition: 200ms;
+      width: 100%;
+    }
+    input:hover {
+      border: 1px solid #bbbbbb;
+    }
+    input:focus {
+      border: 1px solid #7439db;
+    }
+    span {
+      position: absolute;
+      right: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
